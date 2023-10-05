@@ -33,6 +33,8 @@ figure,imshow(imLog,[]),title('LoG')
 res=edge(im,'canny',[0.1,0.4],3.75);
 figure,imshow(res,[]),title('Canny')
 
-
+imGaus = imfilter(im,aux);
+figure,imshow(imGaus,[]),title('Filtrat gausià')
+figure,imshow(im-imGaus,[]),title('Filtrat gausià')
 
 
